@@ -1,0 +1,26 @@
+<section id="highlights">
+  <h2>Festivalens Höjdpunkter & Artister</h2>
+  <div class="artist-grid">
+        
+    <div class="artist-card">
+      <img src="img/håkan.jpg" alt="Foto på artisten Håkan Hellström"/>
+      <h3>Håkan Hellström</h3>
+    </div>
+
+    <div class="artist-card">
+      <img src="img/zara.jpg" alt="Foto på artisten Zara Larsson"/>
+      <h3>Zara Larsson</h3>
+    </div>
+
+    <div class="artist-card">
+      <img src="img/benjamin.jpg" alt="Foto på artisten Benjamin Ingrosso"/>
+      <h3>Benjamin Ingrosso</h3>
+    </div>
+
+    <div class="artist-card">
+      <img src="img/veronica.jpg" alt="Veronica Maggio"/>
+      <h3>Veronica Maggio</h3>
+      </div>
+
+    </div>
+</section>

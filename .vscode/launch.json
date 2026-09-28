@@ -1,0 +1,6 @@
+const fristname= "Linus";
+let score= 0;
+score= 32;
+
+console.log(fristname);
+console.log(score);
