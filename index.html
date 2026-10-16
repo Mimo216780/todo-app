@@ -3,81 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min systemutvecklarresa</title>
+    <title>Min Systemutvecklarresa</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+
     <header>
-      <div class="logo">Min systemutvecklarresa</div>
-      <nav>
-        <ul>
-          <li><a href="#">Hem</a></li>
-          <li><a href="#">Kurser</a></li>
-          <li><a href="#">Om mig</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
+        <h2><i class="fa-solid fa-graduation-cap"></i> Min Systemutvecklarresa</h2>
+        <h2 class="sub-title"><i class="fa-solid fa-laptop-code"></i> Pågående Utbildning: Termin 1 (2026-2028)</h2>
+        <p>Min 2-åriga utbildning med digitala anteckningar, koder och kurser sparade automatiskt.</p>
+        <div class="progress-box">
+            <p class="progress-summary">Utbildningsframsteg (Totalt 2 år): 12% slutfört</p>
+            <div class="progress-track" role="progressbar" aria-label="Utbildningsframsteg" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-fill"></div>
+            </div>
+            <p class="progress-dates">Start: Aug 2026 <span aria-hidden="true">·</span> Examen: Juni 2028</p>
+        </div>
+
     </header>
 
-    <section class="hero">
-      <div class="hero-content">
-        <img class="image-card" src="datasystemutveckling-large-contained.jpeg" alt="Detta är huvudbild av hemsidan">
-        <h1>Välkommen till min systemutvecklarresa!</h1>
-        <p>Följ med på min resa inom systemutveckling.</p>
-      </div>
-    </section>
+    <div class="container">
+        
+        <h2 class="section-title"><i class="fa-solid fa-book-open"></i> Mina Kurser & Moduler</h2>
 
-      <main>
-          <h2>Mina kurser</h2>
+        <div class="courses-grid">
 
-        <div class="cards-container">
-          <div class="card">
-            <img class="image-card" src="HTML bild.png" alt="Detta är HTML-bilden">
-            <h3>Module 1: HTML Grunderna</h3>
-            <p>Module 1: HTML Grunderna. Här lägger vi grunden för vår webbutveckling.</p>
-            <button class="btn">Börja kursen</button>
-          </div>
+            <div class="course-card">
+                <div>
+                    <i class="fa-brands fa-html5 course-icon"></i>
+                    <h3 class="course-title">Modul 1: HTML5 Grunderna</h3>
+                    <p class="course-desc">Här samlar jag alla anteckningar om semantisk HTML, struktur och webbelement.</p>
+                </div>
+                <button class="btn-gold" onclick="openNotes('html5', 'Modul 1: HTML5 Grunderna')">
+                    <i class="fa-solid fa-pen-to-square"></i> Öppna Anteckningar
+                </button>
+            </div>
 
-          <div class="card">
-            <img class="image-card" src="css bild.png" alt="Detta är CSS-bilden">
-            <h3>Module 2: CSS Grunderna</h3>
-            <p>Module 2: CSS Grunderna. Här lär vi oss att styla våra webbsidor med CSS.</p>
-            <button class="btn">Börja kursen</button>
-          </div>
+            <div class="course-card">
+                <div>
+                    <i class="fa-brands fa-css3-alt course-icon"></i>
+                    <h3 class="course-title">Modul 2: CSS3 & Styling</h3>
+                    <p class="course-desc">Flexbox, Grid, färger, animationer och responsiv design för moderna webbplatser.</p>
+                </div>
+                <button class="btn-gold" onclick="openNotes('css3', 'Modul 2: CSS3 & Styling')">
+                    <i class="fa-solid fa-pen-to-square"></i> Öppna Anteckningar
+                </button>
+            </div>
 
-          <div class="card">
-            <img class="image-card" src="java bild.png" alt="Detta är JavaScript-bilden">
-            <h3>Module 3: JavaScript Grunderna</h3>
-            <p>Module 3: JavaScript Grunderna. Här lär vi oss att lägga till interaktivitet till våra webbsidor.</p>
-            <button class="btn">Börja kursen</button>
-          </div>
+            <div class="course-card">
+                <div>
+                    <i class="fa-brands fa-square-js course-icon"></i>
+                    <h3 class="course-title">Modul 3: JavaScript</h3>
+                    <p class="course-desc">Logik, variabler, funktioner, DOM-hantering och interaktiva funktioner.</p>
+                </div>
+                <button class="btn-gold" onclick="openNotes('js', 'Modul 3: JavaScript')">
+                    <i class="fa-solid fa-pen-to-square"></i> Öppna Anteckningar
+                </button>
+            </div>
+
+            <div class="course-card">
+                <div>
+                    <i class="fa-solid fa-code course-icon"></i>
+                    <h3 class="course-title">Modul 4: C# & .NET</h3>
+                    <p class="course-desc">Objektorienterad programmering (OOP), klasser och backend-utveckling.</p>
+                </div>
+                <button class="btn-gold" onclick="openNotes('csharp', 'Modul 4: C# & .NET')">
+                    <i class="fa-solid fa-pen-to-square"></i> Öppna Anteckningar
+                </button>
+            </div>
+
+            <div class="course-card">
+                <div>
+                    <i class="fa-solid fa-database course-icon"></i>
+                    <h3 class="course-title">Modul 5: Databaser & SQL</h3>
+                    <p class="course-desc">Tabeller, relationer, SQL-frågor och databasarkitektur.</p>
+                </div>
+                <button class="btn-gold" onclick="openNotes('sql', 'Modul 5: Databaser & SQL')">
+                    <i class="fa-solid fa-pen-to-square"></i> Öppna Anteckningar
+                </button>
+            </div>
+
+            <div class="course-card">
+                <div>
+                    <i class="fa-solid fa-briefcase course-icon"></i>
+                    <h3 class="course-title">Modul 6: LIA / Praktik</h3>
+                    <p class="course-desc">Dagbok och anteckningar från arbetserfarenhet och projekt ute på företag.</p>
+                </div>
+                <button class="btn-gold" onclick="openNotes('lia', 'Modul 6: LIA / Praktik')">
+                    <i class="fa-solid fa-pen-to-square"></i> Öppna Anteckningar
+                </button>
+            </div>
+
         </div>
-
-        <section class="about-section">
-          <h2>Om mig</h2>
-          <p>Jag lär mig systemutveckling och är intresserad av att skapa innovativa lösningar.</p>
-          <a href="#" class="btn arv">Läs mer</a>
-        </section>
-      </div>
-
-      <aside class="sidebar">
-        <h3>Snabblänkar</h3>
-        <ul>
-          <li><a href="#">Kurser</a></li>
-          <li><a href="#">Projekt</a></li>
-          <li><a href="#">Portfolio</a></li>
-        </ul>
 
         <div class="info-box">
-          <h4>Kommande mål</h4>
-          <p>Fortsätta med frontend och byggnadsprojekt för att förbättra mina kunskaper.</p>
+            <h3><i class="fa-solid fa-circle-info"></i> Om studenten</h3>
+            <p class="info-highlight">Driven systemutvecklarstudent med fokus på ren kod</p>
+            <p>Jag studerar systemutveckling på heltid. Min passion ligger i att bygga moderna, snabba och användarvänliga system. Denna webbplats är mitt eget verktyg för att spåra mina framsteg, repetera svåra koncept och samla mina projekt.</p>
+            
+            <div class="student-tags" aria-label="Studentens fokusområden">
+                <span>#Student</span>
+                <span>#Fullstack Journey</span>
+                <span>#Clean Code</span>
+            </div>
         </div>
-      </aside>
-    </main>
 
-    <footer>
-      <p>&copy; 2026 Min systemutvecklarresa. Alla rättigheter förbehållna.</p>
-    </footer>
+    </div>
+
+    <div class="modal-backdrop" id="notesModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeNotes()">&times;</span>
+            <h2 id="modalTitle">Kursnamn</h2>
+            <div class="status-badge" id="saveStatus">
+                <i class="fa-solid fa-check-circle"></i> Sparad automatiskt
+            </div>
+            
+            <p class="modal-desc">
+                Klistra in din text, Notion-anteckningar eller kod nedan. Ändringar sparas direkt medan du skriver.
+            </p>
+
+            <textarea id="notesEditor" class="notes-editor" placeholder="Klistra in dina anteckningar från Notion här..."></textarea>
+            
+            <div class="modal-actions">
+                <button class="btn-gold btn-auto" onclick="closeNotes()">Stäng fönster</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentCourseKey = '';
+
+        function openNotes(courseKey, title) {
+            currentCourseKey = courseKey;
+            document.getElementById('modalTitle').innerText = title;
+            
+            const savedNotes = localStorage.getItem('notes_' + courseKey) || '';
+            document.getElementById('notesEditor').value = savedNotes;
+            
+            document.getElementById('saveStatus').style.opacity = '1';
+            document.getElementById('notesModal').style.display = 'flex';
+        }
+
+        function closeNotes() {
+            document.getElementById('notesModal').style.display = 'none';
+        }
+
+        document.getElementById('notesEditor').addEventListener('input', function() {
+            if (currentCourseKey) {
+                localStorage.setItem('notes_' + currentCourseKey, this.value);
+                
+                const status = document.getElementById('saveStatus');
+                status.innerHTML = '<i class="fa-solid fa-sync fa-spin"></i> Sparar...';
+                
+                setTimeout(() => {
+                    status.innerHTML = '<i class="fa-solid fa-check-circle"></i> Sparad automatiskt';
+                }, 500);
+            }
+        });
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('notesModal');
+            if (event.target == modal) {
+                closeNotes();
+            }
+        }
+    </script>
 </body>
 </html>
